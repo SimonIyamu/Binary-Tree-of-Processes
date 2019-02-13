@@ -10,3 +10,15 @@ The splitter/merger nodes are between the root and the leaf nodes. Their main pu
 As a result, the records flow from the leaf nodes, to the root. Additionaly, each node passes some statistics to the root.  
 
 The communication and data flow between the nodes is carried out by unnamed pipes.
+
+Compilation:
+make
+
+Execution:
+./myfind -h Height –d Datafile -p Pattern -s  
+,where Height is an integer between 2 and 5, Datafile the binary file which will be searched and Pattern a string.
+The -s argument is optional. It implies that the segments that the file is divided into, are of different sizes.  
+e.x.: ./myfind -h 3 -d Records1000.bin -p ae -s
+
+--------------
+This project was an assignments in the Operating Systems course in 2018.
