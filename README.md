@@ -9,4 +9,4 @@ The splitter/merger nodes are between the root and the leaf nodes. Their main pu
 
 As a result, the records flow from the leaf nodes, to the root. Additionaly, each node passes some statistics to the root.  
 
-The communication and data flow between the nodes is done by unnamed pipes.
+The communication and data flow between the nodes is done using unnamed pipes.
